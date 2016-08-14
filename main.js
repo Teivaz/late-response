@@ -5,15 +5,16 @@ const config = {
 	l_default: 1000,
 	l_min: 1, // 1 ms
 	l_max: 10000, // 10 s
-	t_default: 'text/plain',
+	t_default: 'text/html',
 	t_allowed: {
+		'text/html': require('./text-html'),
 		'text/plain': require('./text-plain'),
 		'image/gif': require('./image-gif')
 	}
 }
 
 Number.prototype.clamp = function(min, max) {
-  return Math.min(Math.max(this, min), max);
+  return Math.min(Math.max(this, min), max)
 }
 
 var s = Http.createServer(function (req, res) {
@@ -27,9 +28,9 @@ var s = Http.createServer(function (req, res) {
 	if( (t in config.t_allowed) == false)
 		t = config.t_default
 
-	setInterval(function() {
+	setTimeout(function() {
 		res.writeHead(200, {'Content-Type': t})
-		res.end(config.t_allowed[t]);
+		res.end(config.t_allowed[t])
 	}, l)
 })
 s.listen(3200)

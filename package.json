@@ -16,6 +16,7 @@
   "author": "teivaz",
   "license": "Zlib",
   "devDependencies": {
+    "markdown-js": "0.0.3",
     "urijs": "^1.18.1"
   }
 }
