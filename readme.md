@@ -11,8 +11,8 @@ For example following request will return this document in plain text format wit
  - `text/html` - [example](http://late-response.teivaz.com?t=text/html)
  - `text/plain` - [example](http://late-response.teivaz.com?t=text/plain)
  - `text/xml` - [example](http://late-response.teivaz.com?t=text/xml)
- - `text/x-markdown` - [example](http://late-response.teivaz.com?t=text/markdown)
+ - `text/x-markdown` - [example](http://late-response.teivaz.com?t=text/x-markdown)
  - `image/gif` - [example](http://late-response.teivaz.com?t=image/gif)
 
 ### Feedback
-Feedback, feature request, and bugs go here https://github.com/Teivaz/late-response/issues
+Feedback, feature request, and bugs go here [https://github.com/Teivaz/late-response/issues](https://github.com/Teivaz/late-response/issues)
