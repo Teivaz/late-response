@@ -4,7 +4,7 @@ const Http = require('http')
 const text = require('./text')
 
 const config = {
-	l_default: 1000,
+	l_default: 0,
 	l_min: 0, // 1 ms
 	l_max: 10000, // 10 s
 	t_default: 'text/html',
