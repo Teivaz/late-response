@@ -16,6 +16,8 @@ For example following request will return this document in plain text format wit
  - `image/png` - [...?t=image/png](http://late-response.teivaz.com?t=image/png)
  - `image/svg+xml` - [...?t=image/svg%2Bxml](http://late-response.teivaz.com?t=image/svg%2Bxml)
  - `image/jpeg` - [...?t=image/jpeg](http://late-response.teivaz.com?t=image/jpeg)
+ - `image/x-icon` - [...?t=image/x-icon](http://late-response.teivaz.com?t=image/x-icon)
+ - `image/bmp` - [...?t=image/bmp](http://late-response.teivaz.com?t=image/bmp)
 
 ### Feedback
 Feedback, feature request, and bugs go here [https://github.com/Teivaz/late-response/issues](https://github.com/Teivaz/late-response/issues)

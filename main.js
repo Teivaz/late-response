@@ -20,6 +20,7 @@ const config = {
 		'image/svg+xml': image.svg_xml,
 		'image/bmp': image.bmp,
 		'image/gif': image.gif,
+		'image/x-icon': image.ico,
 	}
 }
 
@@ -28,8 +29,8 @@ Number.prototype.clamp = function(min, max) {
 }
 
 function faviconPlease(res){
-	res.writeHead(200, {'Content-Type': 'image/png'})
-	res.end(image.favicon_png)
+	res.writeHead(200, {'Content-Type': 'image/x-icon'})
+	res.end(image.ico)
 }
 
 function servePlease(params, res) {
