@@ -8,6 +8,7 @@ const logger = new (Winston.Logger)({
 	exceptionHandlers: [
 		new (Winston.transports.File)({ filename: __dirname + '/logs/exceptions.log', json: false })
 	],
+	humanReadableUnhandledException: true,
 	exitOnError: false
 })
 

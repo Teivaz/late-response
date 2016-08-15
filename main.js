@@ -67,7 +67,7 @@ var s = Http.createServer(function (req, res) {
 	else{
 		var params = uri.search(true)
 		if(path === '/') {
-			log('info', req, params)
+			log('info', req, path, params)
 			servePlease(params, res)
 		}
 		else {
@@ -79,7 +79,7 @@ var s = Http.createServer(function (req, res) {
 s.listen(3200)
 
 function log(level, req, path, params) {
-	Logger.warn({
+	Logger[level]({
 		method: req.method,
 		params: params,
 		path: path,
