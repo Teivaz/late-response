@@ -11,4 +11,4 @@ const logger = new (Winston.Logger)({
 	exitOnError: false
 })
 
-module.exports = logger.info
+module.exports = logger

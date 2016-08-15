@@ -28,6 +28,11 @@ Number.prototype.clamp = function(min, max) {
 	return Math.min(Math.max(this, min), max)
 }
 
+function nothingPlease(res) {
+	res.writeHead(404, {'Content-Type': 'text/plain'})
+	res.end('404. Not found')
+}
+
 function faviconPlease(res){
 	res.writeHead(200, {'Content-Type': 'image/x-icon'})
 	res.end(image.ico)
@@ -55,21 +60,29 @@ function servePlease(params, res) {
 
 var s = Http.createServer(function (req, res) {
 	var uri = Uri(req.url)
-	if(uri.pathname() == '/favicon.ico'){
+	var path = uri.pathname()
+	if(path === '/favicon.ico'){
 		faviconPlease(res)
 	}
 	else{
 		var params = uri.search(true)
-		log(req, params)
-		servePlease(params, res)
+		if(path === '/') {
+			log('info', req, params)
+			servePlease(params, res)
+		}
+		else {
+			log('warn', req, path, params)
+			nothingPlease(res)
+		}
 	}
 })
 s.listen(3200)
 
-function log(req, params) {
-	Logger({
+function log(level, req, path, params) {
+	Logger.warn({
 		method: req.method,
 		params: params,
+		path: path,
 		remote: req.headers['x-forwarded-for'],
 		referer: req.headers.referer
 	})
