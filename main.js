@@ -69,7 +69,7 @@ function log(req, params) {
 	Logger({
 		method: req.method,
 		params: params,
-		host: req.headers.host,
+		remote: req.connection.remoteAddress,
 		referer: req.headers.referer
 	})
 }
