@@ -69,7 +69,7 @@ function log(req, params) {
 	Logger({
 		method: req.method,
 		params: params,
-		remote: req.connection.remoteAddress,
+		remote: req.headers['x-forwarded-for'],
 		referer: req.headers.referer
 	})
 }
