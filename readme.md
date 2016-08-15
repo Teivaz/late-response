@@ -1,10 +1,11 @@
 ## Late-response
 Responds with user specified delay. Designed to test your applications for a scenario with high latency  
 For example following request will return this document in plain text format with 2 seconds delay  
-[`http://late-response.teivaz.com/?`**`l=2000`**`&`**`t=text/plain`**](http://late-response.teivaz.com/?l=2000&t=text/plain)
-
+[`http://late-response.teivaz.com/?`**`l=2000`**`&`**`t=text/plain`**](http://late-response.teivaz.com/?l=2000&t=text/plain)  
+And this request will return an jpeg image after 5 second pause  
+[`http://late-response.teivaz.com/?`**`l=5000`**`&`**`t=image/jpeg`**](http://late-response.teivaz.com/?l=5000&t=image/jpeg)
 ### How to use? Just add query parametes:
- - `l` - integer, number of ms to wait before response. Ensures that response will be deliver not earlier than specified ammount of time within range 0 - 10 seconds
+ - `l` - integer, number of ms to wait before response. Ensures that response will be deliver not earlier than specified amount of time within range 0 - 10,000 milliseconds
  - `t` - mime type
 
 ### Currently supported mime types:
@@ -20,7 +21,7 @@ For example following request will return this document in plain text format wit
  - `image/bmp` - [...?t=image/bmp](http://late-response.teivaz.com?t=image/bmp)
 
 ### Feedback
-Feedback, feature request, and bugs go here [https://github.com/Teivaz/late-response/issues](https://github.com/Teivaz/late-response/issues)
+Feedback, feature requests, and bugs send here [https://github.com/Teivaz/late-response/issues](https://github.com/Teivaz/late-response/issues)
 
 ### Author and license
 Copyright (c) 2016 [Teivaz](http://teivaz.com) under [Zlib License](https://opensource.org/licenses/Zlib)
