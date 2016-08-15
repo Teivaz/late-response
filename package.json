@@ -17,6 +17,7 @@
   "license": "Zlib",
   "devDependencies": {
     "markdown-js": "0.0.3",
-    "urijs": "^1.18.1"
+    "urijs": "^1.18.1",
+    "winston": "^2.2.0"
   }
 }
