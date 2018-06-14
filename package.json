@@ -4,7 +4,9 @@
   "description": "webservice that allows replies with required latency",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start main.js --name='late-reponse'",
+    "refresh": "git pull origin master && npm install && pm2 restart late-response"
   },
   "keywords": [
     "latency",
