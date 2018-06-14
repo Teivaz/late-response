@@ -14,7 +14,7 @@ const config = {
 		'text/html': text.html,
 		'text/xml': text.html,
 		'text/plain': text.plain,
-		'text/x-markdown': text.plain,
+		'text/markdown': text.plain,
 		'image/png': image.png,
 		'image/jpeg': image.jpeg,
 		'image/svg+xml': image.svg_xml,
