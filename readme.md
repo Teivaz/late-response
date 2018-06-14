@@ -12,7 +12,7 @@ And this request will return an jpeg image after 5 second pause
  - `text/html` - [...?t=text/html](http://late-response.teivaz.com?t=text/html)
  - `text/plain` - [...?t=text/plain](http://late-response.teivaz.com?t=text/plain)
  - `text/xml` - [...?t=text/xml](http://late-response.teivaz.com?t=text/xml)
- - `text/x-markdown` - [...?t=text/x-markdown](http://late-response.teivaz.com?t=text/x-markdown)
+ - `text/markdown` - [...?t=text/markdown](http://late-response.teivaz.com?t=text/markdown)
  - `image/gif` - [...?t=image/gif](http://late-response.teivaz.com?t=image/gif)
  - `image/png` - [...?t=image/png](http://late-response.teivaz.com?t=image/png)
  - `image/svg+xml` - [...?t=image/svg%2Bxml](http://late-response.teivaz.com?t=image/svg%2Bxml)
